@@ -18,6 +18,7 @@ public class Google {
         Driver.getDriver().findElement(By.name("q")).sendKeys(word + Keys.ENTER);
         String title = Driver.getDriver().getTitle();
         Assert.assertTrue("Title failed", title.contains(word));
+        Driver.quit();
 
 
     }
