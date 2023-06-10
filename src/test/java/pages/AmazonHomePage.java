@@ -14,6 +14,9 @@ public class AmazonHomePage {
     @FindBy(id = "twotabsearchtextbox")
     public WebElement searchBox ;
 
+    @FindBy(name = "something")
+    public WebElement something;
+
 
 
 }
