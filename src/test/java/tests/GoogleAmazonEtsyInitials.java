@@ -49,6 +49,13 @@ public class GoogleAmazonEtsyInitials {
 
     }
 
+    @Test
+    public void googleImage(){
+        Driver.getDriver().get(Config.getValue("googleURL"));
+        System.out.println("Checking new test with some images");
+    }
+
+
     @After
     public void afterSettings(){
         Driver.quit();
